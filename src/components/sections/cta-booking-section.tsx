@@ -20,7 +20,7 @@ export default function CtaBookingSection() {
   ];
 
   return (
-    <section className="relative bg-black py-32 sm:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="book-your-call" className="relative bg-black py-32 sm:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-black to-gray-950"></div>
       <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
 
@@ -81,13 +81,13 @@ export default function CtaBookingSection() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+919307512816"
+                  href="tel:+919016707399"
                   className="w-full flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg px-4 py-2 text-gray-300 hover:text-white transition-colors"
                 >
-                  <span>+91 9307512816</span>
+                  <span>+91 9016707399</span>
                 </a>
                 <a
-                  href="https://wa.me/919307512816"
+                  href="https://wa.me/919016707399"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg px-4 py-2 text-gray-300 hover:text-white transition-colors"
@@ -116,7 +116,7 @@ export default function CtaBookingSection() {
                 asChild
                 className="w-full bg-white hover:bg-gray-100 text-black font-semibold rounded-full py-6 text-lg group transition-all duration-300"
               >
-                <a href="#">
+                <a href="https://calendly.com/samayr-m-1004/instant-interview-ai-with-samay" target="_blank" rel="noopener noreferrer">
                   Book Discovery Call
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>

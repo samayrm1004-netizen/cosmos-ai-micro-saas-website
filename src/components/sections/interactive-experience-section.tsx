@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Store, ArrowRight } from 'lucide-react';
 import { SplineScene } from '@/components/ui/splite';
@@ -19,7 +21,15 @@ const InteractiveExperienceSection: React.FC = () => {
             Experience the future of AI-powered automation. Our voice agents and MVP solutions create immersive experiences that capture attention and drive conversions.
           </p>
           <div className="mt-12">
-            <button className="group px-8 py-4 bg-white hover:bg-gray-100 text-black rounded-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto md:mx-0">
+            <button 
+              onClick={() => {
+                document.getElementById('book-your-call')?.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
+              className="group px-8 py-4 bg-white hover:bg-gray-100 text-black rounded-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto md:mx-0"
+            >
               <Store className="w-6 h-6" />
               <span>Explore Our Solutions</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
