@@ -5,6 +5,24 @@ import { Button } from "@/components/ui/button";
 import { Lightning } from "@/components/ui/lightning";
 
 export default function HeroSection() {
+  const handleTalkToAI = () => {
+    // Find and click the Vapi widget button to open it
+    const vapiWidget = document.querySelector('vapi-widget') as any;
+    if (vapiWidget) {
+      // Try to open the widget via its public API
+      if (typeof vapiWidget.open === 'function') {
+        vapiWidget.open();
+      } else {
+        // Fallback: find and click the widget's trigger button
+        const widgetButton = vapiWidget.shadowRoot?.querySelector('button') || 
+                            document.querySelector('[data-vapi-button]');
+        if (widgetButton) {
+          (widgetButton as HTMLElement).click();
+        }
+      }
+    }
+  };
+
   return (
     <section className="relative w-full min-h-screen bg-black text-white overflow-hidden flex items-center justify-center">
       {/* Clean minimal background */}
@@ -45,15 +63,19 @@ export default function HeroSection() {
           <Button 
             size="lg" 
             className="group rounded-full px-8 py-6 text-lg font-semibold bg-white hover:bg-gray-100 text-black shadow-2xl shadow-white/20 hover:shadow-white/40 transition-all duration-300"
+            asChild
           >
-            <Bot className="w-6 h-6 mr-3" />
-            <span>Book Discovery Call</span>
-            <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+            <a href="https://calendly.com/samayr-m-1004/instant-interview-ai-with-samay" target="_blank" rel="noopener noreferrer">
+              <Bot className="w-6 h-6 mr-3" />
+              <span>Book Discovery Call</span>
+              <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
             className="rounded-full px-8 py-6 text-lg font-semibold text-white border-2 border-white/30 hover:bg-white/10 hover:border-white/60 transition-all duration-300"
+            onClick={handleTalkToAI}
           >
             Talk to AI
           </Button>
