@@ -28,11 +28,12 @@ export default function AIWidget() {
     // Trigger Vapi widget
     const vapiWidget = document.querySelector('vapi-widget') as any;
     if (vapiWidget) {
+      // Try multiple methods to open the widget
       if (typeof vapiWidget.open === 'function') {
         vapiWidget.open();
       } else {
-        const widgetButton = vapiWidget.shadowRoot?.querySelector('button') || 
-                            document.querySelector('[data-vapi-button]');
+        // Try to find and click the button in shadow DOM
+        const widgetButton = vapiWidget.shadowRoot?.querySelector('button');
         if (widgetButton) {
           (widgetButton as HTMLElement).click();
         }
@@ -45,11 +46,11 @@ export default function AIWidget() {
 
   return (
     <>
-      {/* Floating trigger button */}
+      {/* Floating trigger button - positioned on right */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "fixed bottom-6 left-6 z-[9998] group transition-all duration-500 ease-out",
+          "fixed bottom-6 right-6 z-[9998] group transition-all duration-500 ease-out",
           isLoaded ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         )}
         aria-label="Talk to AI"
@@ -71,17 +72,17 @@ export default function AIWidget() {
           <div className="absolute inset-0 rounded-full border-2 border-purple-500 animate-ping opacity-75"></div>
         </div>
 
-        {/* Label */}
-        <div className="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900/95 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-xl border border-white/10">
+        {/* Label - positioned on left of button */}
+        <div className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-gray-900/95 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-xl border border-white/10">
           Talk to AI
         </div>
       </button>
 
-      {/* Widget panel */}
+      {/* Widget panel - positioned on right */}
       {isOpen && (
         <div
           className={cn(
-            "fixed bottom-24 left-6 z-[9998] w-96 max-w-[calc(100vw-3rem)] transition-all duration-500 ease-out",
+            "fixed bottom-24 right-6 z-[9998] w-96 max-w-[calc(100vw-3rem)] transition-all duration-500 ease-out",
             isOpen ? "translate-y-0 opacity-100 scale-100" : "translate-y-10 opacity-0 scale-95"
           )}
         >
@@ -132,13 +133,13 @@ export default function AIWidget() {
                     className={cn(
                       "flex-1 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300",
                       mode === "chat"
-                        ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/30"
+                        ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-500/30"
                         : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
                     )}
                   >
                     <span className="flex items-center justify-center gap-2">
                       <MessageSquare className="w-4 h-4" />
-                      Chat Mode
+                      SHEETAL (AI HR)
                     </span>
                   </button>
                 </div>
