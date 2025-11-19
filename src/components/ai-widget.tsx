@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Mic, MessageSquare, X, Phone } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Mic, MessageSquare, X, Phone, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function AIWidget() {
@@ -9,6 +9,11 @@ export default function AIWidget() {
   const [mode, setMode] = useState<"voice" | "chat">("voice");
   const [isLoaded, setIsLoaded] = useState(false);
   const [isVoiceActive, setIsVoiceActive] = useState(false);
+  const [isChatActive, setIsChatActive] = useState(false);
+  const [messages, setMessages] = useState<Array<{ role: "user" | "assistant"; content: string }>>([]);
+  const [inputMessage, setInputMessage] = useState("");
+  const vapiVoiceRef = useRef<any>(null);
+  const vapiChatRef = useRef<any>(null);
 
   // Wait for page to fully load before showing widget
   useEffect(() => {
@@ -18,28 +23,113 @@ export default function AIWidget() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Initialize Vapi SDK for voice
+  useEffect(() => {
+    const initVapi = async () => {
+      try {
+        if (typeof window !== 'undefined') {
+          const { default: Vapi } = await import('@vapi-ai/web');
+          vapiVoiceRef.current = new Vapi('d3167409-64a4-4f79-b9b4-ccc1f7333759');
+          
+          // Setup event listeners
+          vapiVoiceRef.current.on('call-end', () => {
+            setIsVoiceActive(false);
+          });
+          
+          vapiVoiceRef.current.on('error', (error: any) => {
+            console.error('Vapi error:', error);
+            setIsVoiceActive(false);
+          });
+        }
+      } catch (error) {
+        console.error('Failed to initialize Vapi:', error);
+      }
+    };
+    
+    if (isLoaded) {
+      initVapi();
+    }
+  }, [isLoaded]);
+
+  const handleVoiceModeStart = async () => {
+    try {
+      if (vapiVoiceRef.current) {
+        setIsVoiceActive(true);
+        await vapiVoiceRef.current.start('563e7f19-0ea8-4985-aaa7-33096e04bb8b');
+      }
+    } catch (error) {
+      console.error('Failed to start voice call:', error);
+      setIsVoiceActive(false);
+    }
+  };
+
+  const handleVoiceModeStop = () => {
+    try {
+      if (vapiVoiceRef.current) {
+        vapiVoiceRef.current.stop();
+        setIsVoiceActive(false);
+      }
+    } catch (error) {
+      console.error('Failed to stop voice call:', error);
+    }
+  };
+
   const handleVoiceModeToggle = () => {
-    setIsVoiceActive(!isVoiceActive);
-    // Here you would integrate with your voice AI service
+    if (isVoiceActive) {
+      handleVoiceModeStop();
+    } else {
+      handleVoiceModeStart();
+    }
+  };
+
+  const handleChatModeStart = async () => {
+    try {
+      setIsChatActive(true);
+      setMessages([{ role: "assistant", content: "Hi! I'm Sheetal, your AI HR assistant. How can I help you today?" }]);
+      
+      // Initialize chat instance
+      if (!vapiChatRef.current && typeof window !== 'undefined') {
+        const { default: Vapi } = await import('@vapi-ai/web');
+        vapiChatRef.current = new Vapi('d3167409-64a4-4f79-b9b4-ccc1f7333759');
+      }
+    } catch (error) {
+      console.error('Failed to start chat:', error);
+      setIsChatActive(false);
+    }
+  };
+
+  const handleSendMessage = async () => {
+    if (!inputMessage.trim() || !vapiChatRef.current) return;
+
+    const userMessage = inputMessage.trim();
+    setInputMessage("");
+    setMessages(prev => [...prev, { role: "user", content: userMessage }]);
+
+    try {
+      // Start a call with text input
+      await vapiChatRef.current.start('563e7f19-0ea8-4985-aaa7-33096e04bb8b', {
+        transcriber: {
+          provider: "deepgram",
+          model: "nova-2",
+          language: "en"
+        }
+      });
+      
+      // Simulate response (in production, this would come from Vapi events)
+      setTimeout(() => {
+        setMessages(prev => [...prev, { role: "assistant", content: "I understand your query. Let me help you with that..." }]);
+      }, 1000);
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      setMessages(prev => [...prev, { role: "assistant", content: "Sorry, I encountered an error. Please try again." }]);
+    }
   };
 
   const handleChatMode = () => {
     setMode("chat");
-    // Trigger Vapi widget
-    const vapiWidget = document.querySelector('vapi-widget') as any;
-    if (vapiWidget) {
-      // Try multiple methods to open the widget
-      if (typeof vapiWidget.open === 'function') {
-        vapiWidget.open();
-      } else {
-        // Try to find and click the button in shadow DOM
-        const widgetButton = vapiWidget.shadowRoot?.querySelector('button');
-        if (widgetButton) {
-          (widgetButton as HTMLElement).click();
-        }
-      }
+    if (!isChatActive) {
+      handleChatModeStart();
     }
-    setIsOpen(false);
   };
 
   if (!isLoaded) return null;
@@ -130,15 +220,10 @@ export default function AIWidget() {
                   </button>
                   <button
                     onClick={handleChatMode}
-                    className={cn(
-                      "flex-1 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300",
-                      mode === "chat"
-                        ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-500/30"
-                        : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
-                    )}
+                    className="flex-1 px-3 py-2 rounded-full text-xs font-medium transition-all duration-300 bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-700 hover:to-indigo-700 shadow-lg shadow-purple-500/30"
                   >
-                    <span className="flex items-center justify-center gap-2">
-                      <MessageSquare className="w-4 h-4" />
+                    <span className="flex items-center justify-center gap-1.5">
+                      <MessageSquare className="w-3.5 h-3.5" />
                       SHEETAL (AI HR)
                     </span>
                   </button>
@@ -224,6 +309,57 @@ export default function AIWidget() {
                         </div>
                       ))}
                     </div>
+                  </div>
+                )}
+
+                {mode === "chat" && (
+                  <div className="space-y-4 animate-in fade-in duration-300">
+                    {/* Chat messages */}
+                    <div className="h-64 overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-purple-600 scrollbar-track-gray-800">
+                      {messages.map((message, i) => (
+                        <div
+                          key={i}
+                          className={cn(
+                            "flex",
+                            message.role === "user" ? "justify-end" : "justify-start"
+                          )}
+                        >
+                          <div
+                            className={cn(
+                              "max-w-[80%] px-4 py-2 rounded-2xl",
+                              message.role === "user"
+                                ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
+                                : "bg-white/5 text-gray-300 border border-white/10"
+                            )}
+                          >
+                            <p className="text-sm">{message.content}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Input */}
+                    <div className="flex gap-2">
+                      <input
+                        type="text"
+                        value={inputMessage}
+                        onChange={(e) => setInputMessage(e.target.value)}
+                        onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                        placeholder="Type your message..."
+                        className="flex-1 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-white text-sm focus:outline-none focus:ring-2 focus:ring-purple-600 placeholder:text-gray-500"
+                      />
+                      <button
+                        onClick={handleSendMessage}
+                        disabled={!inputMessage.trim()}
+                        className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-full p-2 transition-all duration-300 shadow-lg shadow-purple-500/30"
+                      >
+                        <Send className="w-5 h-5" />
+                      </button>
+                    </div>
+
+                    <p className="text-gray-500 text-xs text-center">
+                      Powered by SHEETAL AI HR Assistant
+                    </p>
                   </div>
                 )}
               </div>
