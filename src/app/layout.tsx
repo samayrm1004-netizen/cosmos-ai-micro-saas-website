@@ -4,6 +4,7 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import CosmicLoader from "@/components/cosmic-loader";
+import AIWidget from "@/components/ai-widget";
 
 export const metadata: Metadata = {
   title: "Cosmos - AI Automation & Micro-SaaS by Samay R.M.",
@@ -36,10 +37,13 @@ export default function RootLayout({
         />
         {children}
         <VisualEditsMessenger />
-        <vapi-widget
-          assistant-id="563e7f19-0ea8-4985-aaa7-33096e04bb8b"
-          public-key="d3167409-64a4-4f79-b9b4-ccc1f7333759"
-        />
+        <AIWidget />
+        <div style={{ display: 'none' }}>
+          <vapi-widget
+            assistant-id="563e7f19-0ea8-4985-aaa7-33096e04bb8b"
+            public-key="d3167409-64a4-4f79-b9b4-ccc1f7333759"
+          />
+        </div>
       </body>
     </html>
   );
