@@ -11,3 +11,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2025-12-24 18:41] - perf(bundle): remove unused icon libraries to cut initial JS bundle
 - Replaced full package imports with tree-shaken lucide-react icons.
+
+## [2025-12-24 22:02] - feat(feedback): add floating user feedback widget with screenshot support
+- Enabled beta users to submit bug reports directly from dashboard.
