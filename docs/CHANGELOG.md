@@ -8,3 +8,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2025-12-19 16:37] - fix(auth): prevent session drop on rapid client page navigation
 - Synchronized cookie expiration with Supabase auth refresh cycle.
+
+## [2025-12-24 18:41] - perf(bundle): remove unused icon libraries to cut initial JS bundle
+- Replaced full package imports with tree-shaken lucide-react icons.
