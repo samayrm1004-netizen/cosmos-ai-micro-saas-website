@@ -14,3 +14,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2025-12-24 22:02] - feat(feedback): add floating user feedback widget with screenshot support
 - Enabled beta users to submit bug reports directly from dashboard.
+
+## [2025-12-26 13:52] - feat(analytics): add privacy-friendly event tracking for signup funnels
+- Tracked conversion milestone rates without third-party cookies.
