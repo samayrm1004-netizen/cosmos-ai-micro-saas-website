@@ -17,3 +17,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2025-12-26 13:52] - feat(analytics): add privacy-friendly event tracking for signup funnels
 - Tracked conversion milestone rates without third-party cookies.
+
+## [2025-12-26 22:48] - fix(forms): add email normalization before submission check
+- Trimmed whitespace and lowercased input to avoid duplicate records.
