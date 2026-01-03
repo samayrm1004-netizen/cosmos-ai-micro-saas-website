@@ -35,3 +35,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-03 12:27] - fix(footer): correct links to terms of service and privacy policy
 - Updated footer anchors with canonical legal document URLs.
+
+## [2026-01-03 22:17] - feat(analytics): add privacy-friendly event tracking for signup funnels
+- Tracked conversion milestone rates without third-party cookies.
