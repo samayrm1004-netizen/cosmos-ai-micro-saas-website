@@ -29,3 +29,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-01 20:01] - style(nav): implement sticky glassmorphism header on scroll
 - Added backdrop-blur-md and subtle border separator on scroll down.
+
+## [2026-01-03 12:04] - test(auth): add integration tests for magic link login flow
+- Verified token exchange and user profile creation in test database.
