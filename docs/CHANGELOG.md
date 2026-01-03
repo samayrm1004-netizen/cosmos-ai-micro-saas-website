@@ -38,3 +38,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-03 22:17] - feat(analytics): add privacy-friendly event tracking for signup funnels
 - Tracked conversion milestone rates without third-party cookies.
+
+## [2026-01-03 22:42] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
+- Included social preview cards for blog posts and feature pages.
