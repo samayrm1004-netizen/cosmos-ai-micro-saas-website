@@ -41,3 +41,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-03 22:42] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
 - Included social preview cards for blog posts and feature pages.
+
+## [2026-01-12 11:55] - docs(changelog): document v1.2.0 production release updates
+- Summarized newly introduced features and UX improvements.
