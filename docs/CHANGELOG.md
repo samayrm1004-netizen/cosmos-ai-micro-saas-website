@@ -56,3 +56,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-15 17:21] - docs(setup): document environment variables for Stripe and Supabase
 - Listed required keys and sandbox test credit card numbers in readme.
+
+## [2026-01-15 22:41] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
+- Included social preview cards for blog posts and feature pages.
