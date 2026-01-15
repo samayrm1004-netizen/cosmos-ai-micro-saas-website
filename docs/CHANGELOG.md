@@ -50,3 +50,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-13 19:41] - fix(auth): prevent session drop on rapid client page navigation
 - Synchronized cookie expiration with Supabase auth refresh cycle.
+
+## [2026-01-15 14:23] - perf(images): enable Next.js image optimization for testimonial avatars
+- Converted raw png uploads to modern webp with responsive srcSet.
