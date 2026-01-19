@@ -62,3 +62,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-19 13:56] - perf(loading): implement skeleton placeholders for dashboard metric cards
 - Prevented cumulative layout shifts while usage statistics load.
+
+## [2026-01-19 18:00] - perf(bundle): remove unused icon libraries to cut initial JS bundle
+- Replaced full package imports with tree-shaken lucide-react icons.
