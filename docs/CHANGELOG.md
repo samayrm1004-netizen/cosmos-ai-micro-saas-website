@@ -59,3 +59,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-15 22:41] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
 - Included social preview cards for blog posts and feature pages.
+
+## [2026-01-19 13:56] - perf(loading): implement skeleton placeholders for dashboard metric cards
+- Prevented cumulative layout shifts while usage statistics load.
