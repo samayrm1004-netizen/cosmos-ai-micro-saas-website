@@ -68,3 +68,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-19 20:29] - refactor(dashboard): split usage metric charts into separate components
 - Improved code readability and reduced bundle footprint on dashboard load.
+
+## [2026-01-20 10:47] - refactor(api): convert raw API routes to typed handler wrapper
+- Standardized try/catch error handling and error JSON response schema.
