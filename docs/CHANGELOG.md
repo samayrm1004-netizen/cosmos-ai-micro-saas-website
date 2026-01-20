@@ -71,3 +71,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-20 10:47] - refactor(api): convert raw API routes to typed handler wrapper
 - Standardized try/catch error handling and error JSON response schema.
+
+## [2026-01-20 12:33] - perf(loading): implement skeleton placeholders for dashboard metric cards
+- Prevented cumulative layout shifts while usage statistics load.
