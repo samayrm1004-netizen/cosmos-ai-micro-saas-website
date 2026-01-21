@@ -74,3 +74,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-20 12:33] - perf(loading): implement skeleton placeholders for dashboard metric cards
 - Prevented cumulative layout shifts while usage statistics load.
+
+## [2026-01-21 17:48] - refactor(middleware): protect authenticated routes with edge middleware
+- Redirected unauthenticated visitors to login before loading app shell.
