@@ -77,3 +77,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-21 17:48] - refactor(middleware): protect authenticated routes with edge middleware
 - Redirected unauthenticated visitors to login before loading app shell.
+
+## [2026-01-21 19:49] - perf(fonts): self-host Geist Sans font to reduce layout shift
+- Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
