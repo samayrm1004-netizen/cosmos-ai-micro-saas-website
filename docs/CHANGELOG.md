@@ -80,3 +80,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-21 19:49] - perf(fonts): self-host Geist Sans font to reduce layout shift
 - Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
+
+## [2026-01-25 10:11] - perf(fonts): self-host Geist Sans font to reduce layout shift
+- Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
