@@ -92,3 +92,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-28 11:56] - refactor(api): convert raw API routes to typed handler wrapper
 - Standardized try/catch error handling and error JSON response schema.
+
+## [2026-01-28 18:02] - style(landing): polish hero headline typography and CTA glow effect
+- Fine-tuned font weights and subtle linear gradient accents.
