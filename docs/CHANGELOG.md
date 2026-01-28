@@ -95,3 +95,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-28 18:02] - style(landing): polish hero headline typography and CTA glow effect
 - Fine-tuned font weights and subtle linear gradient accents.
+
+## [2026-01-28 20:41] - fix(footer): correct links to terms of service and privacy policy
+- Updated footer anchors with canonical legal document URLs.
