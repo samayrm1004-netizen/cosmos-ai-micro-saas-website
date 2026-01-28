@@ -89,3 +89,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-27 20:32] - style(nav): implement sticky glassmorphism header on scroll
 - Added backdrop-blur-md and subtle border separator on scroll down.
+
+## [2026-01-28 11:56] - refactor(api): convert raw API routes to typed handler wrapper
+- Standardized try/catch error handling and error JSON response schema.
