@@ -98,3 +98,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-28 20:41] - fix(footer): correct links to terms of service and privacy policy
 - Updated footer anchors with canonical legal document URLs.
+
+## [2026-01-30 18:22] - refactor(api): convert raw API routes to typed handler wrapper
+- Standardized try/catch error handling and error JSON response schema.
