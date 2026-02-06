@@ -107,3 +107,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-06 20:52] - feat(pricing): add annual discount toggle and tiered breakdown
 - Added interactive billing switch with dynamic savings calculations.
+
+## [2026-02-06 21:30] - refactor(api): convert raw API routes to typed handler wrapper
+- Standardized try/catch error handling and error JSON response schema.
