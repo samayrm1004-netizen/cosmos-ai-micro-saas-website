@@ -101,3 +101,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-01-30 18:22] - refactor(api): convert raw API routes to typed handler wrapper
 - Standardized try/catch error handling and error JSON response schema.
+
+## [2026-02-06 17:37] - fix(billing): correct prorated invoice calculation on plan upgrade
+- Adjusted billing cycle date matching logic to prevent double charging.
