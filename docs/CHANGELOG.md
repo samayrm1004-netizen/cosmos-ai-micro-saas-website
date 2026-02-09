@@ -110,3 +110,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-06 21:30] - refactor(api): convert raw API routes to typed handler wrapper
 - Standardized try/catch error handling and error JSON response schema.
+
+## [2026-02-09 15:48] - docs(setup): document environment variables for Stripe and Supabase
+- Listed required keys and sandbox test credit card numbers in readme.
