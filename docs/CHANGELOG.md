@@ -113,3 +113,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-09 15:48] - docs(setup): document environment variables for Stripe and Supabase
 - Listed required keys and sandbox test credit card numbers in readme.
+
+## [2026-02-19 16:44] - style(landing): polish hero headline typography and CTA glow effect
+- Fine-tuned font weights and subtle linear gradient accents.
