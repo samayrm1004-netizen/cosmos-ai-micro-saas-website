@@ -116,3 +116,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-19 16:44] - style(landing): polish hero headline typography and CTA glow effect
 - Fine-tuned font weights and subtle linear gradient accents.
+
+## [2026-02-19 20:03] - perf(bundle): remove unused icon libraries to cut initial JS bundle
+- Replaced full package imports with tree-shaken lucide-react icons.
