@@ -119,3 +119,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-19 20:03] - perf(bundle): remove unused icon libraries to cut initial JS bundle
 - Replaced full package imports with tree-shaken lucide-react icons.
+
+## [2026-02-24 14:53] - docs(setup): document environment variables for Stripe and Supabase
+- Listed required keys and sandbox test credit card numbers in readme.
