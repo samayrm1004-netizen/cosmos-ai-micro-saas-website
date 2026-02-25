@@ -122,3 +122,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-24 14:53] - docs(setup): document environment variables for Stripe and Supabase
 - Listed required keys and sandbox test credit card numbers in readme.
+
+## [2026-02-25 11:08] - perf(images): enable Next.js image optimization for testimonial avatars
+- Converted raw png uploads to modern webp with responsive srcSet.
