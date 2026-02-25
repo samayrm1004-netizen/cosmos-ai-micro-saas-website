@@ -125,3 +125,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-25 11:08] - perf(images): enable Next.js image optimization for testimonial avatars
 - Converted raw png uploads to modern webp with responsive srcSet.
+
+## [2026-02-25 19:38] - perf(fonts): self-host Geist Sans font to reduce layout shift
+- Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
