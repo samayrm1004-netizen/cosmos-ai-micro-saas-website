@@ -128,3 +128,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-02-25 19:38] - perf(fonts): self-host Geist Sans font to reduce layout shift
 - Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
+
+## [2026-03-02 10:09] - fix(footer): correct links to terms of service and privacy policy
+- Updated footer anchors with canonical legal document URLs.
