@@ -134,3 +134,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-03-02 21:32] - fix(billing): correct prorated invoice calculation on plan upgrade
 - Adjusted billing cycle date matching logic to prevent double charging.
+
+## [2026-03-04 14:40] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
+- Included social preview cards for blog posts and feature pages.
