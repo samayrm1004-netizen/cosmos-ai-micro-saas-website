@@ -137,3 +137,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-03-04 14:40] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
 - Included social preview cards for blog posts and feature pages.
+
+## [2026-03-04 18:25] - refactor(middleware): protect authenticated routes with edge middleware
+- Redirected unauthenticated visitors to login before loading app shell.
