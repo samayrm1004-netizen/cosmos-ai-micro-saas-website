@@ -140,3 +140,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-03-04 18:25] - refactor(middleware): protect authenticated routes with edge middleware
 - Redirected unauthenticated visitors to login before loading app shell.
+
+## [2026-03-04 18:50] - feat(billing): integrate Stripe checkout session webhook listener
+- Handled customer subscription created, updated, and deleted events.
