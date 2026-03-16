@@ -143,3 +143,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-03-04 18:50] - feat(billing): integrate Stripe checkout session webhook listener
 - Handled customer subscription created, updated, and deleted events.
+
+## [2026-03-16 18:14] - refactor(api): convert raw API routes to typed handler wrapper
+- Standardized try/catch error handling and error JSON response schema.
