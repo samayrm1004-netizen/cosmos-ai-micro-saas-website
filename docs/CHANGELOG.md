@@ -149,3 +149,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-03-18 15:57] - fix(auth): prevent session drop on rapid client page navigation
 - Synchronized cookie expiration with Supabase auth refresh cycle.
+
+## [2026-03-18 20:47] - feat(settings): allow users to update notification preferences
+- Added toggle switches for marketing and security alert emails.
