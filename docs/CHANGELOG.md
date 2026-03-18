@@ -146,3 +146,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-03-16 18:14] - refactor(api): convert raw API routes to typed handler wrapper
 - Standardized try/catch error handling and error JSON response schema.
+
+## [2026-03-18 15:57] - fix(auth): prevent session drop on rapid client page navigation
+- Synchronized cookie expiration with Supabase auth refresh cycle.
