@@ -158,3 +158,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-04-03 13:02] - fix(footer): correct links to terms of service and privacy policy
 - Updated footer anchors with canonical legal document URLs.
+
+## [2026-04-06 15:09] - fix(footer): correct links to terms of service and privacy policy
+- Updated footer anchors with canonical legal document URLs.
