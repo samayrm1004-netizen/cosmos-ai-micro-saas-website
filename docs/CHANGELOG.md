@@ -167,3 +167,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-04-24 17:33] - test(auth): add integration tests for magic link login flow
 - Verified token exchange and user profile creation in test database.
+
+## [2026-04-28 20:49] - docs(changelog): document v1.2.0 production release updates
+- Summarized newly introduced features and UX improvements.
