@@ -170,3 +170,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-04-28 20:49] - docs(changelog): document v1.2.0 production release updates
 - Summarized newly introduced features and UX improvements.
+
+## [2026-05-04 11:40] - perf(bundle): remove unused icon libraries to cut initial JS bundle
+- Replaced full package imports with tree-shaken lucide-react icons.
