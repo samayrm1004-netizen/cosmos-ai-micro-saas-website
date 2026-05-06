@@ -176,3 +176,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-04 21:20] - style(landing): polish hero headline typography and CTA glow effect
 - Fine-tuned font weights and subtle linear gradient accents.
+
+## [2026-05-06 13:56] - style(nav): implement sticky glassmorphism header on scroll
+- Added backdrop-blur-md and subtle border separator on scroll down.
