@@ -179,3 +179,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-06 13:56] - style(nav): implement sticky glassmorphism header on scroll
 - Added backdrop-blur-md and subtle border separator on scroll down.
+
+## [2026-05-13 14:38] - perf(images): enable Next.js image optimization for testimonial avatars
+- Converted raw png uploads to modern webp with responsive srcSet.
