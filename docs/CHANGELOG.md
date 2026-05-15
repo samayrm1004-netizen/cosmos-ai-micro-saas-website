@@ -182,3 +182,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-13 14:38] - perf(images): enable Next.js image optimization for testimonial avatars
 - Converted raw png uploads to modern webp with responsive srcSet.
+
+## [2026-05-15 20:42] - feat(settings): allow users to update notification preferences
+- Added toggle switches for marketing and security alert emails.
