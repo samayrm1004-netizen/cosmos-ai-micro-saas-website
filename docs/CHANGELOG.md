@@ -188,3 +188,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-20 10:29] - refactor(dashboard): split usage metric charts into separate components
 - Improved code readability and reduced bundle footprint on dashboard load.
+
+## [2026-05-20 13:20] - fix(auth): prevent session drop on rapid client page navigation
+- Synchronized cookie expiration with Supabase auth refresh cycle.
