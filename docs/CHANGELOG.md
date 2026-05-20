@@ -191,3 +191,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-20 13:20] - fix(auth): prevent session drop on rapid client page navigation
 - Synchronized cookie expiration with Supabase auth refresh cycle.
+
+## [2026-05-20 15:47] - perf(loading): implement skeleton placeholders for dashboard metric cards
+- Prevented cumulative layout shifts while usage statistics load.
