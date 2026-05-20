@@ -185,3 +185,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-15 20:42] - feat(settings): allow users to update notification preferences
 - Added toggle switches for marketing and security alert emails.
+
+## [2026-05-20 10:29] - refactor(dashboard): split usage metric charts into separate components
+- Improved code readability and reduced bundle footprint on dashboard load.
