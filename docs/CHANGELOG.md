@@ -197,3 +197,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-22 11:41] - docs(setup): document environment variables for Stripe and Supabase
 - Listed required keys and sandbox test credit card numbers in readme.
+
+## [2026-05-22 17:38] - feat(keys): provide API key management interface for developer users
+- Enabled generating and revoking secret keys with read/write scopes.
