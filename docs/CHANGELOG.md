@@ -194,3 +194,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-20 15:47] - perf(loading): implement skeleton placeholders for dashboard metric cards
 - Prevented cumulative layout shifts while usage statistics load.
+
+## [2026-05-22 11:41] - docs(setup): document environment variables for Stripe and Supabase
+- Listed required keys and sandbox test credit card numbers in readme.
