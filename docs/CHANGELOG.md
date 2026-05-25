@@ -200,3 +200,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-22 17:38] - feat(keys): provide API key management interface for developer users
 - Enabled generating and revoking secret keys with read/write scopes.
+
+## [2026-05-25 12:01] - fix(footer): correct links to terms of service and privacy policy
+- Updated footer anchors with canonical legal document URLs.
