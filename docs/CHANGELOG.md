@@ -206,3 +206,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-30 11:49] - perf(fonts): self-host Geist Sans font to reduce layout shift
 - Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
+
+## [2026-05-30 17:51] - feat(billing): integrate Stripe checkout session webhook listener
+- Handled customer subscription created, updated, and deleted events.
