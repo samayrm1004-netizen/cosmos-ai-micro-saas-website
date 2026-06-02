@@ -212,3 +212,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-02 12:27] - docs(changelog): document v1.2.0 production release updates
 - Summarized newly introduced features and UX improvements.
+
+## [2026-06-02 20:01] - fix(footer): correct links to terms of service and privacy policy
+- Updated footer anchors with canonical legal document URLs.
