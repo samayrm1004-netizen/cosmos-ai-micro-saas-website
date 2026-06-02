@@ -209,3 +209,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-05-30 17:51] - feat(billing): integrate Stripe checkout session webhook listener
 - Handled customer subscription created, updated, and deleted events.
+
+## [2026-06-02 12:27] - docs(changelog): document v1.2.0 production release updates
+- Summarized newly introduced features and UX improvements.
