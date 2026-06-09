@@ -218,3 +218,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-04 17:31] - perf(loading): implement skeleton placeholders for dashboard metric cards
 - Prevented cumulative layout shifts while usage statistics load.
+
+## [2026-06-09 12:42] - feat(keys): provide API key management interface for developer users
+- Enabled generating and revoking secret keys with read/write scopes.
