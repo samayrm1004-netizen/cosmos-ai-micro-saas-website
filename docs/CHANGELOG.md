@@ -221,3 +221,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-09 12:42] - feat(keys): provide API key management interface for developer users
 - Enabled generating and revoking secret keys with read/write scopes.
+
+## [2026-06-09 19:17] - test(auth): add integration tests for magic link login flow
+- Verified token exchange and user profile creation in test database.
