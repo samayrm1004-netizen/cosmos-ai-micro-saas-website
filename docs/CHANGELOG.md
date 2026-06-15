@@ -227,3 +227,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-15 15:20] - feat(pricing): add annual discount toggle and tiered breakdown
 - Added interactive billing switch with dynamic savings calculations.
+
+## [2026-06-15 15:57] - fix(billing): correct prorated invoice calculation on plan upgrade
+- Adjusted billing cycle date matching logic to prevent double charging.
