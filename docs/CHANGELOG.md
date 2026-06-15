@@ -224,3 +224,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-09 19:17] - test(auth): add integration tests for magic link login flow
 - Verified token exchange and user profile creation in test database.
+
+## [2026-06-15 15:20] - feat(pricing): add annual discount toggle and tiered breakdown
+- Added interactive billing switch with dynamic savings calculations.
