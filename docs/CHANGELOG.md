@@ -230,3 +230,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-15 15:57] - fix(billing): correct prorated invoice calculation on plan upgrade
 - Adjusted billing cycle date matching logic to prevent double charging.
+
+## [2026-06-15 17:06] - fix(footer): correct links to terms of service and privacy policy
+- Updated footer anchors with canonical legal document URLs.
