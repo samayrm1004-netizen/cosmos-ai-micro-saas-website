@@ -233,3 +233,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-15 17:06] - fix(footer): correct links to terms of service and privacy policy
 - Updated footer anchors with canonical legal document URLs.
+
+## [2026-06-24 15:44] - fix(forms): add email normalization before submission check
+- Trimmed whitespace and lowercased input to avoid duplicate records.
