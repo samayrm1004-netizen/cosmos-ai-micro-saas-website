@@ -239,3 +239,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-24 18:29] - feat(pricing): add annual discount toggle and tiered breakdown
 - Added interactive billing switch with dynamic savings calculations.
+
+## [2026-06-24 22:24] - perf(fonts): self-host Geist Sans font to reduce layout shift
+- Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
