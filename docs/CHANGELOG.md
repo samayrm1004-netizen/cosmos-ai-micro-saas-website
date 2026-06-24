@@ -236,3 +236,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-24 15:44] - fix(forms): add email normalization before submission check
 - Trimmed whitespace and lowercased input to avoid duplicate records.
+
+## [2026-06-24 18:29] - feat(pricing): add annual discount toggle and tiered breakdown
+- Added interactive billing switch with dynamic savings calculations.
