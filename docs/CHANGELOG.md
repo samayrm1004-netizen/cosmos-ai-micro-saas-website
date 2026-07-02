@@ -242,3 +242,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-06-24 22:24] - perf(fonts): self-host Geist Sans font to reduce layout shift
 - Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
+
+## [2026-07-02 20:50] - perf(bundle): remove unused icon libraries to cut initial JS bundle
+- Replaced full package imports with tree-shaken lucide-react icons.
