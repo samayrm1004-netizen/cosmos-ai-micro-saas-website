@@ -251,3 +251,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-07-07 12:19] - refactor(api): convert raw API routes to typed handler wrapper
 - Standardized try/catch error handling and error JSON response schema.
+
+## [2026-07-07 13:25] - feat(settings): allow users to update notification preferences
+- Added toggle switches for marketing and security alert emails.
