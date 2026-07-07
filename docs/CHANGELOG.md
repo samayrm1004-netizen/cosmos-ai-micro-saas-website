@@ -254,3 +254,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-07-07 13:25] - feat(settings): allow users to update notification preferences
 - Added toggle switches for marketing and security alert emails.
+
+## [2026-07-07 19:09] - feat(keys): provide API key management interface for developer users
+- Enabled generating and revoking secret keys with read/write scopes.
