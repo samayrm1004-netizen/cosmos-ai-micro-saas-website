@@ -248,3 +248,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-07-06 16:47] - perf(loading): implement skeleton placeholders for dashboard metric cards
 - Prevented cumulative layout shifts while usage statistics load.
+
+## [2026-07-07 12:19] - refactor(api): convert raw API routes to typed handler wrapper
+- Standardized try/catch error handling and error JSON response schema.
