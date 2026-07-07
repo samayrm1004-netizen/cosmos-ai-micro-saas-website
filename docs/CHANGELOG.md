@@ -257,3 +257,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-07-07 19:09] - feat(keys): provide API key management interface for developer users
 - Enabled generating and revoking secret keys with read/write scopes.
+
+## [2026-07-07 20:37] - refactor(dashboard): split usage metric charts into separate components
+- Improved code readability and reduced bundle footprint on dashboard load.
