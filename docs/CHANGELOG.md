@@ -260,3 +260,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-07-07 20:37] - refactor(dashboard): split usage metric charts into separate components
 - Improved code readability and reduced bundle footprint on dashboard load.
+
+## [2026-07-07 21:23] - fix(billing): correct prorated invoice calculation on plan upgrade
+- Adjusted billing cycle date matching logic to prevent double charging.
