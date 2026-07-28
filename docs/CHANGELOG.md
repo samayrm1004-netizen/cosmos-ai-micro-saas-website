@@ -263,3 +263,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-07-07 21:23] - fix(billing): correct prorated invoice calculation on plan upgrade
 - Adjusted billing cycle date matching logic to prevent double charging.
+
+## [2026-07-28 22:01] - perf(loading): implement skeleton placeholders for dashboard metric cards
+- Prevented cumulative layout shifts while usage statistics load.
