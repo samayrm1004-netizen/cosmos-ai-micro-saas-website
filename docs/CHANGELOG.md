@@ -269,3 +269,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-07-30 15:13] - style(nav): implement sticky glassmorphism header on scroll
 - Added backdrop-blur-md and subtle border separator on scroll down.
+
+## [2026-07-30 21:49] - fix(billing): correct prorated invoice calculation on plan upgrade
+- Adjusted billing cycle date matching logic to prevent double charging.
