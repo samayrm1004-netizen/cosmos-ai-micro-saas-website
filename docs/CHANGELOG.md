@@ -275,3 +275,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-08 16:37] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
 - Included social preview cards for blog posts and feature pages.
+
+## [2026-08-08 22:29] - test(auth): add integration tests for magic link login flow
+- Verified token exchange and user profile creation in test database.
