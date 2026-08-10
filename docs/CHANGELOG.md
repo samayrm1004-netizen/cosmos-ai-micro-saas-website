@@ -278,3 +278,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-08 22:29] - test(auth): add integration tests for magic link login flow
 - Verified token exchange and user profile creation in test database.
+
+## [2026-08-10 11:34] - fix(footer): correct links to terms of service and privacy policy
+- Updated footer anchors with canonical legal document URLs.
