@@ -284,3 +284,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-25 10:34] - feat(billing): integrate Stripe checkout session webhook listener
 - Handled customer subscription created, updated, and deleted events.
+
+## [2026-08-25 16:56] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
+- Included social preview cards for blog posts and feature pages.
