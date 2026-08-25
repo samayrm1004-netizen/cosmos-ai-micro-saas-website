@@ -281,3 +281,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-10 11:34] - fix(footer): correct links to terms of service and privacy policy
 - Updated footer anchors with canonical legal document URLs.
+
+## [2026-08-25 10:34] - feat(billing): integrate Stripe checkout session webhook listener
+- Handled customer subscription created, updated, and deleted events.
