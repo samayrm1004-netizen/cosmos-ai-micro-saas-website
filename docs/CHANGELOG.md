@@ -293,3 +293,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-29 12:41] - feat(analytics): add privacy-friendly event tracking for signup funnels
 - Tracked conversion milestone rates without third-party cookies.
+
+## [2026-08-29 13:41] - perf(fonts): self-host Geist Sans font to reduce layout shift
+- Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
