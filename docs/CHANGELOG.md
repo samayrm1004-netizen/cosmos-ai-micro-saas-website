@@ -287,3 +287,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-25 16:56] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
 - Included social preview cards for blog posts and feature pages.
+
+## [2026-08-29 10:16] - fix(auth): prevent session drop on rapid client page navigation
+- Synchronized cookie expiration with Supabase auth refresh cycle.
