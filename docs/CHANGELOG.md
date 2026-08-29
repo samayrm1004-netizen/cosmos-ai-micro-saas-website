@@ -290,3 +290,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-29 10:16] - fix(auth): prevent session drop on rapid client page navigation
 - Synchronized cookie expiration with Supabase auth refresh cycle.
+
+## [2026-08-29 12:41] - feat(analytics): add privacy-friendly event tracking for signup funnels
+- Tracked conversion milestone rates without third-party cookies.
