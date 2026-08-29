@@ -296,3 +296,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-29 13:41] - perf(fonts): self-host Geist Sans font to reduce layout shift
 - Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
+
+## [2026-08-29 15:04] - style(nav): implement sticky glassmorphism header on scroll
+- Added backdrop-blur-md and subtle border separator on scroll down.
