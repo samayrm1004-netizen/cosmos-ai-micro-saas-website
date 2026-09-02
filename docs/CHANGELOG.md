@@ -299,3 +299,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-08-29 15:04] - style(nav): implement sticky glassmorphism header on scroll
 - Added backdrop-blur-md and subtle border separator on scroll down.
+
+## [2026-09-02 13:30] - perf(loading): implement skeleton placeholders for dashboard metric cards
+- Prevented cumulative layout shifts while usage statistics load.
