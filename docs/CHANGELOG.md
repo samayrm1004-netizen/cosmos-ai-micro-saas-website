@@ -302,3 +302,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-09-02 13:30] - perf(loading): implement skeleton placeholders for dashboard metric cards
 - Prevented cumulative layout shifts while usage statistics load.
+
+## [2026-09-02 19:43] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
+- Included social preview cards for blog posts and feature pages.
