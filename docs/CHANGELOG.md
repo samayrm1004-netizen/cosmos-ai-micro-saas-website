@@ -305,3 +305,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-09-02 19:43] - feat(seo): generate dynamic sitemap and OpenGraph meta tags
 - Included social preview cards for blog posts and feature pages.
+
+## [2026-09-04 18:54] - style(nav): implement sticky glassmorphism header on scroll
+- Added backdrop-blur-md and subtle border separator on scroll down.
