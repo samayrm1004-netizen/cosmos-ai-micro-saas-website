@@ -308,3 +308,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-09-04 18:54] - style(nav): implement sticky glassmorphism header on scroll
 - Added backdrop-blur-md and subtle border separator on scroll down.
+
+## [2026-09-13 10:39] - perf(fonts): self-host Geist Sans font to reduce layout shift
+- Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
