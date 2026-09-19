@@ -317,3 +317,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-09-19 17:49] - refactor(api): convert raw API routes to typed handler wrapper
 - Standardized try/catch error handling and error JSON response schema.
+
+## [2026-09-19 21:32] - perf(fonts): self-host Geist Sans font to reduce layout shift
+- Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
