@@ -314,3 +314,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-09-19 13:18] - feat(settings): allow users to update notification preferences
 - Added toggle switches for marketing and security alert emails.
+
+## [2026-09-19 17:49] - refactor(api): convert raw API routes to typed handler wrapper
+- Standardized try/catch error handling and error JSON response schema.
