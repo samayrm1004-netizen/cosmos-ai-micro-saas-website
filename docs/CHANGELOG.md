@@ -311,3 +311,6 @@ Frontend and customer dashboard release tracking.
 
 ## [2026-09-13 10:39] - perf(fonts): self-host Geist Sans font to reduce layout shift
 - Eliminated Google Fonts CDN roundtrips to improve Core Web Vitals.
+
+## [2026-09-19 13:18] - feat(settings): allow users to update notification preferences
+- Added toggle switches for marketing and security alert emails.
